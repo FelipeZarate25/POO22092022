@@ -11,6 +11,7 @@ import java.util.logging.Logger;
  * @author felipezarate
  */
 public class Libro {
+    //ATRIBUTOS
     private String titulo;
     private String autor;
     private String genero;
@@ -20,6 +21,7 @@ public class Libro {
     private int paginas;
     private int Id;
 
+    //Metodos constructor
     public Libro() {
     }
 
@@ -34,6 +36,7 @@ public class Libro {
         this.Id = Id;
     }
 
+    //Metodos contructor general
     public String getTitulo() {
         return titulo;
     }
@@ -99,15 +102,18 @@ public class Libro {
     }
     
 
-    //Metodos solicitados
+    //METODOS solicitados
+    //*Para describir un libro.
     public void describir(){
         System.out.println("El libro "+ this.titulo + "fue escrito por el famoso escritor "+this.autor+", es del genero de la "+this.genero+"y, como subgenero del "+this.subgenero+", con fecha de publicacion en "+this.anio);
     }
     
+    //*Para leer un libro
     public void leer(){
         System.out.println("Ahora estoy leyendo el libro del gran escritor " + this.autor+"publicado en la "+this.editorial+", que tiene "+this.paginas+" paginas y es un gran libro, se los recomiendo.");
     }
    
+    //*Para cuando entregan un libro
     public void entregar(){
         System.out.println("El Ingeniero Abraham tiene en su poder el libro "+this.titulo+"con codigo "+this.Id+" y aun no lo ha entregado");
     }
