@@ -4,6 +4,8 @@
  */
 package conceptosbasicos;
 
+import ico.fes.Foco;
+
 /**
  *
  * @author felipezarate
@@ -16,6 +18,8 @@ public class ConceptosBasicos {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Hola de nuevo");
+        
+        Foco foco1 = new Foco();
         
         
     }
