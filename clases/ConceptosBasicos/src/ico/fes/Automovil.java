@@ -26,6 +26,11 @@ public class Automovil {
         this.color = color;
     }
 
+    //public Automovil(String m, Color c) {
+     //   this.marca = m;
+      //  this.color = c;
+    //}
+            
     public Color getColor() {
         return color;
     }
