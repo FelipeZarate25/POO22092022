@@ -1,0 +1,46 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package ico.fes.componentes;
+
+/**
+ *
+ * @author felipezarate
+ */
+public class Monitor {
+    private String marca;
+    private float pulgada;
+
+    public Monitor() {
+    }
+
+    public Monitor(String Marca, float pulgada) {
+        this.marca = Marca;
+        this.pulgada = pulgada;
+    }
+
+    public float getPulgada() {
+        return pulgada;
+    }
+
+    public void setPulgada(float pulgada) {
+        this.pulgada = pulgada;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    @Override
+    public String toString() {
+        return "Monitor{" + "Marca=" + marca + ", pulgada=" + pulgada + '}';
+    }
+    
+    
+    
+}

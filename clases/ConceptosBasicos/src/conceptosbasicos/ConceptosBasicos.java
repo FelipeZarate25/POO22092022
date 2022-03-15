@@ -25,7 +25,7 @@ public class ConceptosBasicos {
         System.out.println("Hola de nuevo");
         
         Silla s1 = new Silla();
-        System.out.println(s1); //Por defecto se invoca toString()
+        System.out.println(  s1); //Por defecto se invoca toString()
         System.out.println(s1.toString());
         
         Automovil miBocho = new Automovil();
