@@ -50,10 +50,7 @@ public class ReutilizacionCodigo2209 {
         //Clase
         Computadora compu2 = new Computadora("Apple","MacBook Pro", new Monitor("Toshiba", 14.3f),new Mouse("Actec", "Optico"), new Teclado("Apple", 101), new Procesador("Mi", 3.4f));
         System.out.println(compu2);
-        
-        /*Computadora compu3 = new Computadora("Apple","MacBook Pro", new Monitor("Toshiba", 14.3f),new Mouse("Mofi", "Inalambrico"), new Teclado("Apple", 101), new Procesador("Mi", 3.4f));
-        System.out.println(compu3);*/
-        
+       
         //Ejercicio clase //Leer de la 43 a la 53
         compu2.setRaton(new Mouse("apple", "Tocuh"));
         
