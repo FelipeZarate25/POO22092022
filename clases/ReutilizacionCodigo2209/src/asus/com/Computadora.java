@@ -22,10 +22,6 @@ public class Computadora {
     private Procesador cpu;
 
     public Computadora() {
-        pantalla = new Monitor();
-        raton = new Mouse();
-        teclado = new Teclado();
-        cpu = new Procesador();
     }
 
     public Computadora(String marca, String modelo, Monitor pantalla, Mouse raton, Teclado teclado, Procesador cpu) {
@@ -89,5 +85,12 @@ public class Computadora {
     public String toString() {
         return "Computadora{" + "marca=" + marca + ", modelo=" + modelo + ", pantalla=" + pantalla + ", raton=" + raton + ", teclado=" + teclado + ", cpu=" + cpu + '}';
     }
+
+    public void getCpu(Procesador procesador) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
+    
+    
     
 }

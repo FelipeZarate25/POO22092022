@@ -7,7 +7,7 @@ package ico.fes.herencia;
 /**
  *
  * @author felipezarate
- */
+ */ //Expecializar a la clase persona 
 public class Alumno extends Persona{
     private String numeroCuenta;
     private String carrera;
@@ -25,15 +25,6 @@ public class Alumno extends Persona{
         this.numeroCuenta = numeroCuenta;
         this.carrera = carrera;
     }
-    
-    
-    public String getNumeroCuenta() {
-        return numeroCuenta;
-    }
-
-    public void setNumeroCuenta(String numeroCuenta) {
-        this.numeroCuenta = numeroCuenta;
-    }
 
     public String getCarrera() {
         return carrera;
@@ -42,16 +33,23 @@ public class Alumno extends Persona{
     public void setCarrera(String carrera) {
         this.carrera = carrera;
     }
-    
-    
-   
+
+    public String getNumeroCuenta() {
+        return numeroCuenta;
+    }
+
+    public void setNumeroCuenta(String numeroCuenta) {
+        this.numeroCuenta = numeroCuenta;
+    }
+
     @Override
     public String toString() {
         return "Alumno{" + "numeroCuenta=" + numeroCuenta + ", carrera=" + carrera + '}';
     }
     
+    
     public void estudiar(int cantidad){
-        System.out.println(this.getNombre()+"esta estudiando"+cantidad+"Hrs ");
+        System.out.println(this.getNombre()+"Esta estudiando"+cantidad+"Hrs");
     }
-
+    
 }

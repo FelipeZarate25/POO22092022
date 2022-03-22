@@ -15,8 +15,8 @@ public class Monitor {
     public Monitor() {
     }
 
-    public Monitor(String Marca, float pulgada) {
-        this.marca = Marca;
+    public Monitor(String marca, float pulgada) {
+        this.marca = marca;
         this.pulgada = pulgada;
     }
 
@@ -38,9 +38,8 @@ public class Monitor {
 
     @Override
     public String toString() {
-        return "Monitor{" + "Marca=" + marca + ", pulgada=" + pulgada + '}';
+        return "Monitor{" + "marca=" + marca + ", pulgada=" + pulgada + '}';
     }
-    
     
     
 }

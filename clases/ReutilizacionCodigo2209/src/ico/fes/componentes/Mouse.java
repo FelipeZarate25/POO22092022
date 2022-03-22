@@ -15,8 +15,8 @@ public class Mouse {
     public Mouse() {
     }
 
-    public Mouse(String Marca, String tipo) {
-        this.marca = Marca;
+    public Mouse(String marca, String tipo) {
+        this.marca = marca;
         this.tipo = tipo;
     }
 
@@ -38,7 +38,7 @@ public class Mouse {
 
     @Override
     public String toString() {
-        return "Mouse{" + "Marca=" + marca + ", tipo=" + tipo + '}';
+        return "Mouse{" + "marca=" + marca + ", tipo=" + tipo + '}';
     }
     
     

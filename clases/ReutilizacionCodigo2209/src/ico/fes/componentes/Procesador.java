@@ -20,14 +20,6 @@ public class Procesador {
         this.frecuenciaEnGhz = frecuenciaEnGhz;
     }
 
-    public float getFrecuenciaEnGhz() {
-        return frecuenciaEnGhz;
-    }
-
-    public void setFrecuenciaEnGhz(float frecuenciaEnGhz) {
-        this.frecuenciaEnGhz = frecuenciaEnGhz;
-    }
-
     public String getMarca() {
         return marca;
     }
@@ -36,11 +28,19 @@ public class Procesador {
         this.marca = marca;
     }
 
+    public float getFrecuenciaEnGhz() {
+        return frecuenciaEnGhz;
+    }
+
+    public void setFrecuenciaEnGhz(float frecuenciaEnGhz) {
+        this.frecuenciaEnGhz = frecuenciaEnGhz;
+    }
+
     @Override
     public String toString() {
         return "Procesador{" + "marca=" + marca + ", frecuenciaEnGhz=" + frecuenciaEnGhz + '}';
     }
-    
-    
-    
+
+   
+   
 }
