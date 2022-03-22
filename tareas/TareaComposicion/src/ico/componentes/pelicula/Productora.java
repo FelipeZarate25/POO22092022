@@ -41,7 +41,7 @@ public class Productora {
         return "Productora{" + "nombre de productora = " + nombreProductora + ", distribución = " + distribucion + '}';
     }
 
-    
+     //Mi metodo de uso general
     public void producir(){
         System.out.println("La productora de "+this.nombreProductora+" hicieron una colaboración con "+this.distribucion+".\n");
     }

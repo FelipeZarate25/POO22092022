@@ -42,7 +42,7 @@ public class Actor {
         return "Actor{" + "nombre del actor principal = " + nombre + ", edad = " + edad + '}';
     }
     
-    
+     //Mi metodo de uso general
     public void actuar(){
         System.out.println("El autor "+this.nombre+" protagoniza Spiderman No way Home a la edad de "+this.edad+" años.\n");
     }

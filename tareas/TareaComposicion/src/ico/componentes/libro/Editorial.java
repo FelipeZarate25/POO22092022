@@ -38,10 +38,11 @@ public class Editorial {
 
     @Override
     public String toString() {
-        return "Editorial{" + "nombre de la editorial = " + nombreEditorial + ", edicion = " + edicion + "}\n";
+        return "Editorial{" + "nombre de la editorial = " + nombreEditorial + ", edicion = " + edicion + "}";
     }
     
+     //Mi metodo de uso general
     public void describir(){
-        System.out.println("Ahora estoy leyendo el libro del gran escritor J.J.J Tolkien, publicado por el "+this.nombreEditorial+" como "+this.edicion+".\n" );
+        System.out.println("Ahora estoy leyendo el libro del gran escritor J.J.J Tolkien, publicado por el "+this.nombreEditorial+" como "+this.edicion+"\n" );
     }
 }

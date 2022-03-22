@@ -13,9 +13,11 @@ import ico.componentes.pelicula.Productora;
  * @author felipezarate
  */
 public class Pelicula {
+    //Atributos
     private String titulo;
     private String genero;
     private int duracion;
+    //Aqui se hizo la composición
     private Actor principal;
     private Director director;
     private Productora productora;
@@ -85,7 +87,7 @@ public class Pelicula {
         return "Pelicula{" + "título de pelicula = " + titulo + ", género = " + genero + ", duración = " + duracion + " minutos, actor = " + principal + ", director = " + director + ", productora = " + productora + '}';
     }
 
-    //Mi metodo de uso general
+    //Para ver pelicula---->metodo
     public void ver(){
         System.out.println("Ahora estoy viendo la pelicula de " + this.titulo+" del genero de "+this.genero+", con una duración de "+this.duracion+" minutos.\n");
     }

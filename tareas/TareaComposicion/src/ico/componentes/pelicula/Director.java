@@ -41,6 +41,7 @@ public class Director {
         return "Director{" + "nombre de director = " + nombreDirector + ", origen = " + origen + '}';
     }
     
+     //Mi metodo de uso general
     public void dirigir(){
         System.out.println("El director "+this.nombreDirector+" de gentilicio "+this.origen+" es muy bueno dirigiendo.\n");
     }

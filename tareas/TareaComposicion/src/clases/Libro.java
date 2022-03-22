@@ -12,8 +12,10 @@ import ico.componentes.libro.Editorial;
  * @author felipezarate
  */
 public class Libro {
+    //Atributos
     private String nombre;
     private String genero;
+    //Aqui se hizo la composición
     private Autor autor;
     private Editorial editorial;
 
@@ -61,10 +63,11 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Libro{" + "nombre del libro= " + nombre + ", género = " + genero + ", autor = " + autor + ", editorial = " + editorial + "}\n";
+        return "Libro{" + "nombre del libro= " + nombre + ", género = " + genero + ", autor = " + autor + ", editorial = " + editorial + '}';
     }
+
     
-     //*Para leer un libro
+     //*Para leer un libro ---->metodo
     public void leer(){
         System.out.println("Estoy leyendo el libro, que lleva como nombre " + this.nombre+" de género del "+this.genero+".\n");
     }

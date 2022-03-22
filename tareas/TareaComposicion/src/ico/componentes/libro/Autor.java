@@ -41,6 +41,7 @@ public class Autor {
         return "Autor{" + "nombre del autor = " + nombre + ", edad = " + edad + '}';
     }
 
+     //Mi metodo de uso general
     public void escribir(){
         System.out.println("El libro del señor de los anillos fue escrito por "+ this.nombre + " fue famoso escritor de "+this.edad+" años de edad.\n");
     }

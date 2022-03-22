@@ -23,34 +23,29 @@ public class TareaComposicion {
      */
     public static void main(String[] args) {
         
-        //Para imprimir pantalla Libro
+        //Espero haberlo hecho bien profesor :)
+        
+        //Llamando objeto y declarando variable
         Libro miLibro = new Libro();
-        
-        
         miLibro.setNombre("El señor de los anillos");
         miLibro.setGenero("Literatura fantástica");
         
         miLibro.setAutor(new Autor(" J.J.J Tolkien", 81));
         miLibro.setEditorial(new Editorial("Ediciones Minotauro","Edición 60"));
+        //Acá para imprimir el pantalla
         System.out.println(miLibro);
         
-        /*>>>>>>>>> Otras formas de imprimirlo en pantalla son: <<<<<<<<<<<<<*/
+        System.out.println("\n"); //----------> Salto de línea
         
+        /*>>>>>>>>> NOTA: Otra forma de imprimirlo en pantalla es: <<<<<<<<<<<<<*/
         /*Libro miLibro2 = new Libro("El señor de los anillos", "Literatura fantástica", 
                 new Autor(" J.J.J Tolkien", 82),
                 new Editorial("Ediciones Minotauro","Edición 62"));
         System.out.println(miLibro2);*/
-        
-        /*Libro miLibro3 = new Libro("El señor de los anillos", "Literatura fantástica", 
-                new Autor(" J.J.J Tolkien", 81),
-                new Editorial("Ediciones Minotauro","Edición 60"));
-        miLibro3.getAutor().setNombre("El señor de los anillos 3");
-        miLibro3.getAutor().setEdad(83);
-        miLibro3.getEditorial().setNombreEditorial("Ediciones Minotauro 3");
-        miLibro3.getEditorial().setEdicion("Edición 63");
-        System.out.println(miLibro3);*/
-        
-        System.out.println("\t \t \t \t Metodos de uso general:");
+     
+        //Probando el metodo de uso general 
+        //---->Profesor,imprimí mis metodos general para ver como quedaba y experimentar más con composición, espero no haya problema.
+        System.out.println("\t \t \t \t \t \t \t \tMetodos de uso general:");
        
         Autor autor = new Autor();
         autor.setNombre("J.J.J Tolkien");
@@ -81,7 +76,7 @@ public class TareaComposicion {
         System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
         
 
-        //Para imprimir pantalla Pelicula
+        //Llamando objeto y declarando variable
         Pelicula miPelicula = new Pelicula();
         miPelicula.setTitulo("Spiderman No hay home");
         miPelicula.setGenero("Ciencia ficción");
@@ -90,33 +85,22 @@ public class TareaComposicion {
         miPelicula.setPrincipal(new Actor("Thomas Stanley Holland", 25));
         miPelicula.setDirector(new Director("Jon Watts", "Fountain, Colorado, Estados Unidos"));
         miPelicula.setProductora(new Productora("Marvel Studios", "Sony Pictures"));
+        //Acá para imprimir el pantalla
         System.out.println(miPelicula);
         
         System.out.println("\n"); //----------> Salto de línea
         
-        /*>>>>>>>>> Otras formas de imprimirlo en pantalla son: <<<<<<<<<<<<<*/
+        
+        /*>>>>>>>>> NOTA: Otra forma de imprimirlo en pantalla es:  <<<<<<<<<<<<<*/
         /*Pelicula miPeli2 = new Pelicula("Spiderman No hay home", "Ciencia ficción", 148,
                 new Actor("Thomas Stanley Holland", 25),
                 new Director("Jon Watts", "Fountain, Colorado, Estados Unidos"),
                 new Productora("Marvel Studios", "Sony Pictures"));
         System.out.println(miPeli2);*/
         
-        /*Pelicula miPeli3 = new Pelicula("Spiderman No hay home", "Ciencia ficción", 148,
-                new Actor("Thomas Stanley Holland", 25),
-                new Director("Jon Watts", "Fountain, Colorado, Estados Unidos"),
-                new Productora("Marvel Studios", "Sony Pictures"));
-        miPeli3.getPrincipal().setNombre("Thomas Stanley Holland");
-        miPeli3.getPrincipal().setEdad(25);
-        miPeli3.getDirector().setNombreDirector("Jon Watts");
-        miPeli3.getDirector().setOrigen("Fountain, Colorado, Estados Unidos");
-        miPeli3.getProductora().setNombreProductora("Marvel Studios");
-        miPeli3.getProductora().setDistribucion("Sony Pictures");
-        System.out.println(miPeli3);*/
-        
-        
-        //System.out.println("\t \t \t \t \t \t \t \t Aquí para imprimir mis metodos de uso general \n");
-        
-        System.out.println("\t \t \t \t Metodos de uso general:");
+        //NOTA: Probando mis metodos de uso general
+        //---->Profesor, imprimí mis metodos general para ver como quedaba y experimentar más con composición, espero no haya problema.
+        System.out.println("\t \t \t \t \t \t \t \tMetodos de uso general:");
 
         Actor actor = new Actor();
         actor.setNombre("Thomas Stanley Holland");
