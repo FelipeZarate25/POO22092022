@@ -27,7 +27,7 @@ public class TareaComposicion {
         
         //Llamando objeto y declarando variable
         Libro miLibro = new Libro();
-        miLibro.setNombre("El señor de los anillos");
+        miLibro.setNombreLibro("El señor de los anillos");
         miLibro.setGenero("Literatura fantástica");
         
         miLibro.setAutor(new Autor(" J.J.J Tolkien", 81));
@@ -44,11 +44,11 @@ public class TareaComposicion {
         System.out.println(miLibro2);*/
      
         //Probando el metodo de uso general 
-        //---->Profesor,imprimí mis metodos general para ver como quedaba y experimentar más con composición, espero no haya problema.
+        //---->Profesor,imprimí mis metodos general para verPelicula como quedaba y experimentar más con composición, espero no haya problema.
         System.out.println("\t \t \t \t \t \t \t \tMetodos de uso general:");
        
         Autor autor = new Autor();
-        autor.setNombre("J.J.J Tolkien");
+        autor.setNombreAutor("J.J.J Tolkien");
         autor.setEdad(81);
         
         Editorial editorial = new Editorial();
@@ -57,17 +57,17 @@ public class TareaComposicion {
         
         
         System.out.println("Libro: ");
-        miLibro.leer();
+        miLibro.leerLibro();
         System.out.println("Autor: ");
-        autor.escribir();
+        autor.escribirLibro();
         System.out.println("Editorial: ");
-        editorial.describir();
+        editorial.describirLibro();
         
         
-        System.out.println("Titulo del libro: " + miLibro.getNombre());
+        System.out.println("Titulo del libro: " + miLibro.getNombreLibro());
         System.out.println("Género: " + miLibro.getGenero());
         System.out.println("Edad: " + autor.getEdad());
-        System.out.println("Autor: " + autor.getNombre());
+        System.out.println("Autor: " + autor.getNombreAutor());
         System.out.println("Nombre de la editorial: " + editorial.getNombreEditorial());
         System.out.println("Edición: \n" + editorial.getEdicion());
      
@@ -99,23 +99,23 @@ public class TareaComposicion {
         System.out.println(miPeli2);*/
         
         //NOTA: Probando mis metodos de uso general
-        //---->Profesor, imprimí mis metodos general para ver como quedaba y experimentar más con composición, espero no haya problema.
+        //---->Profesor, imprimí mis metodos general para verPelicula como quedaba y experimentar más con composición, espero no haya problema.
         System.out.println("\t \t \t \t \t \t \t \tMetodos de uso general:");
 
         Actor actor = new Actor();
-        actor.setNombre("Thomas Stanley Holland");
+        actor.setNombreActor("Thomas Stanley Holland");
         actor.setEdad(25);
         
         Director director = new Director();
         director.setNombreDirector("Jon Watts");
-        director.setOrigen("Fountain, Colorado, Estados Unidos");
+        director.setGentilicio("Fountain, Colorado, Estados Unidos");
         
         Productora productora = new Productora();
         productora.setNombreProductora("Marvel Studios");
-        productora.setDistribucion("Sony Pictures");
+        productora.setCompania("Sony Pictures");
        
         System.out.println("Pelicula: ");
-        miPelicula.ver();
+        miPelicula.verPelicula();
         System.out.println("Actor: ");
         actor.actuar();
         System.out.println("Director: ");
@@ -127,7 +127,7 @@ public class TareaComposicion {
         System.out.println("Pelicula: " + miPelicula.getTitulo());
         System.out.println("Género: " + miPelicula.getGenero());
         System.out.println("Duración: " + miPelicula.getDuracion());
-        System.out.println("Actor: " + actor.getNombre());
+        System.out.println("Actor: " + actor.getNombreActor());
         System.out.println("Director: " + director.getNombreDirector());
         System.out.println("Productora: " + productora.getNombreProductora());
         

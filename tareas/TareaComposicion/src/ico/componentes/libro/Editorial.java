@@ -42,7 +42,7 @@ public class Editorial {
     }
     
      //Mi metodo de uso general
-    public void describir(){
+    public void describirLibro(){
         System.out.println("Ahora estoy leyendo el libro del gran escritor J.J.J Tolkien, publicado por el "+this.nombreEditorial+" como "+this.edicion+"\n" );
     }
 }

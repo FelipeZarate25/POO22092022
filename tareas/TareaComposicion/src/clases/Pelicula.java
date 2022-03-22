@@ -87,8 +87,8 @@ public class Pelicula {
         return "Pelicula{" + "título de pelicula = " + titulo + ", género = " + genero + ", duración = " + duracion + " minutos, actor = " + principal + ", director = " + director + ", productora = " + productora + '}';
     }
 
-    //Para ver pelicula---->metodo
-    public void ver(){
+    //Para verPelicula pelicula---->metodo
+    public void verPelicula(){
         System.out.println("Ahora estoy viendo la pelicula de " + this.titulo+" del genero de "+this.genero+", con una duración de "+this.duracion+" minutos.\n");
     }
    

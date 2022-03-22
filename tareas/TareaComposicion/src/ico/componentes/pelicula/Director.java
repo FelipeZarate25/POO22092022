@@ -10,22 +10,22 @@ package ico.componentes.pelicula;
  */
 public class Director {
     private String nombreDirector;
-    private String origen; //---------->> Origen del director, nacionalidad.
+    private String gentilicio; //---------->> Origen del director, nacionalidad.
 
     public Director() {
     }
 
-    public Director(String nombreDirector, String origen) {
+    public Director(String nombreDirector, String gentilicio) {
         this.nombreDirector = nombreDirector;
-        this.origen = origen;
+        this.gentilicio = gentilicio;
     }
 
-    public String getOrigen() {
-        return origen;
+    public String getGentilicio() {
+        return gentilicio;
     }
 
-    public void setOrigen(String origen) {
-        this.origen = origen;
+    public void setGentilicio(String gentilicio) {
+        this.gentilicio = gentilicio;
     }
 
     public String getNombreDirector() {
@@ -38,12 +38,12 @@ public class Director {
 
     @Override
     public String toString() {
-        return "Director{" + "nombre de director = " + nombreDirector + ", origen = " + origen + '}';
+        return "Director{" + "nombre de director = " + nombreDirector + ", origen = " + gentilicio + '}';
     }
     
      //Mi metodo de uso general
     public void dirigir(){
-        System.out.println("El director "+this.nombreDirector+" de gentilicio "+this.origen+" es muy bueno dirigiendo.\n");
+        System.out.println("El director "+this.nombreDirector+" de gentilicio "+this.gentilicio+" es muy bueno dirigiendo.\n");
     }
     
     

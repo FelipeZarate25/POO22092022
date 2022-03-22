@@ -9,14 +9,14 @@ package ico.componentes.libro;
  * @author felipezarate
  */
 public class Autor {
-    private String nombre;
+    private String nombreAutor;
     private int edad;
 
     public Autor() {
     }
 
-    public Autor(String nombre, int edad) {
-        this.nombre = nombre;
+    public Autor(String nombreAutor, int edad) {
+        this.nombreAutor = nombreAutor;
         this.edad = edad;
     }
 
@@ -28,22 +28,22 @@ public class Autor {
         this.edad = edad;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreAutor() {
+        return nombreAutor;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreAutor(String nombreAutor) {
+        this.nombreAutor = nombreAutor;
     }
 
     @Override
     public String toString() {
-        return "Autor{" + "nombre del autor = " + nombre + ", edad = " + edad + '}';
+        return "Autor{" + "nombre del autor = " + nombreAutor + ", edad = " + edad + '}';
     }
 
      //Mi metodo de uso general
-    public void escribir(){
-        System.out.println("El libro del señor de los anillos fue escrito por "+ this.nombre + " fue famoso escritor de "+this.edad+" años de edad.\n");
+    public void escribirLibro(){
+        System.out.println("El libro del señor de los anillos fue escrito por "+ this.nombreAutor + " fue famoso escritor de "+this.edad+" años de edad.\n");
     }
 
     

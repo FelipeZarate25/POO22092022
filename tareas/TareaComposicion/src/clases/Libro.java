@@ -13,7 +13,7 @@ import ico.componentes.libro.Editorial;
  */
 public class Libro {
     //Atributos
-    private String nombre;
+    private String nombreLibro;
     private String genero;
     //Aqui se hizo la composición
     private Autor autor;
@@ -22,8 +22,8 @@ public class Libro {
     public Libro() {
     }
 
-    public Libro(String nombre, String genero, Autor autor, Editorial editorial) {
-        this.nombre = nombre;
+    public Libro(String nombreLibro, String genero, Autor autor, Editorial editorial) {
+        this.nombreLibro = nombreLibro;
         this.genero = genero;
         this.autor = autor;
         this.editorial = editorial;
@@ -37,12 +37,12 @@ public class Libro {
         this.editorial = editorial;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreLibro() {
+        return nombreLibro;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreLibro(String nombreLibro) {
+        this.nombreLibro = nombreLibro;
     }
 
     public String getGenero() {
@@ -63,13 +63,13 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Libro{" + "nombre del libro= " + nombre + ", género = " + genero + ", autor = " + autor + ", editorial = " + editorial + '}';
+        return "Libro{" + "nombre del libro= " + nombreLibro + ", género = " + genero + ", autor = " + autor + ", editorial = " + editorial + '}';
     }
 
     
-     //*Para leer un libro ---->metodo
-    public void leer(){
-        System.out.println("Estoy leyendo el libro, que lleva como nombre " + this.nombre+" de género del "+this.genero+".\n");
+     //*Para leerLibro un libro ---->metodo
+    public void leerLibro(){
+        System.out.println("Estoy leyendo el libro, que lleva como nombre " + this.nombreLibro+" de género del "+this.genero+".\n");
     }
    
     

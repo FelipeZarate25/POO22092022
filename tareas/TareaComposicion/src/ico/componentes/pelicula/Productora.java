@@ -10,22 +10,22 @@ package ico.componentes.pelicula;
  */
 public class Productora {
     private String nombreProductora;
-    private String distribucion; //--------->Compañia encargada.
+    private String compania; //--------->Compañia, distribucion encargada.
 
     public Productora() {
     }
 
-    public Productora(String nombreProductora, String distribucion) {
+    public Productora(String nombreProductora, String compania) {
         this.nombreProductora = nombreProductora;
-        this.distribucion = distribucion;
+        this.compania = compania;
     }
 
-    public String getDistribucion() {
-        return distribucion;
+    public String getCompania() {
+        return compania;
     }
 
-    public void setDistribucion(String distribucion) {
-        this.distribucion = distribucion;
+    public void setCompania(String compania) {
+        this.compania = compania;
     }
 
     public String getNombreProductora() {
@@ -38,12 +38,12 @@ public class Productora {
 
     @Override
     public String toString() {
-        return "Productora{" + "nombre de productora = " + nombreProductora + ", distribución = " + distribucion + '}';
+        return "Productora{" + "nombre de productora = " + nombreProductora + ", distribución = " + compania + '}';
     }
 
      //Mi metodo de uso general
     public void producir(){
-        System.out.println("La productora de "+this.nombreProductora+" hicieron una colaboración con "+this.distribucion+".\n");
+        System.out.println("La productora de "+this.nombreProductora+" hicieron una colaboración con "+this.compania+".\n");
     }
     
             
