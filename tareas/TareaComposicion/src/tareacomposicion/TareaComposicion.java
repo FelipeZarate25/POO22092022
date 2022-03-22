@@ -23,7 +23,9 @@ public class TareaComposicion {
      */
     public static void main(String[] args) {
         
-        //Espero haberlo hecho bien profesor :)
+        /*Espero haberlo hecho bien profesor, volvi a hacer un commit, 
+        porque se modificó al subir los ejercicios de la clase de hoy, porque lo volví a hacer en otra maquina, 
+        porque lo hice en otra parte ese rato, espero no haya problema, pero sí lo entregue a tiempo, puede checar dos commits atrás:)*/
         
         //Llamando objeto y declarando variable
         Libro miLibro = new Libro();
@@ -37,7 +39,7 @@ public class TareaComposicion {
         
         System.out.println("\n"); //----------> Salto de línea
         
-        /*>>>>>>>>> NOTA: Otra forma de imprimirlo en pantalla es: <<<<<<<<<<<<<*/
+        /*\t \t \t \t \t NOTA: Otra forma de imprimirlo en pantalla es: \t \t \t \t \t*/
         /*Libro miLibro2 = new Libro("El señor de los anillos", "Literatura fantástica", 
                 new Autor(" J.J.J Tolkien", 82),
                 new Editorial("Ediciones Minotauro","Edición 62"));
@@ -45,7 +47,7 @@ public class TareaComposicion {
      
         //Probando el metodo de uso general 
         //---->Profesor,imprimí mis metodos general para verPelicula como quedaba y experimentar más con composición, espero no haya problema.
-        System.out.println("\t \t \t \t \t \t \t \tMetodos de uso general:");
+        System.out.println("\t \t \t \t \t \t \t \t Mis metodos de uso general:");
        
         Autor autor = new Autor();
         autor.setNombreAutor("J.J.J Tolkien");
