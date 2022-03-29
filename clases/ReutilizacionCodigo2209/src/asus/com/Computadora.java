@@ -9,6 +9,9 @@ import ico.fes.componentes.Mouse;
 import ico.fes.componentes.Procesador;
 import ico.fes.componentes.Teclado;
 
+/*Composición: Una o varias clases componen a una nueva clase.*/
+/*Composición: Consiste en crear Clases empleando clases existentes
+Las clases guardan una relación del tipo "tiene un" */
 /**
  *
  * @author felipezarate

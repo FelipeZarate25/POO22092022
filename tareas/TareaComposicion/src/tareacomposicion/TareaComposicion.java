@@ -33,7 +33,7 @@ public class TareaComposicion {
         miLibro.setGenero("Literatura fantástica");
         
         miLibro.setAutor(new Autor(" J.J.J Tolkien", 81));
-        miLibro.setEditorial(new Editorial("Ediciones Minotauro","Edición 60"));
+        miLibro.setEditorial(new Editorial("Ediciones Minotauro","edición 60"));
         //Acá para imprimir el pantalla
         System.out.println(miLibro);
         
@@ -55,7 +55,7 @@ public class TareaComposicion {
         
         Editorial editorial = new Editorial();
         editorial.setNombreEditorial("Ediciones Minotauro");
-        editorial.setEdicion("Edición 60");
+        editorial.setEdicion("edición 60");
         
         
         System.out.println("Libro: ");

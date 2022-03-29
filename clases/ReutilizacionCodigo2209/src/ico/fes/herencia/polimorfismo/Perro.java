@@ -7,7 +7,9 @@ package ico.fes.herencia.polimorfismo;
 /**
  *
  * @author felipezarate
- */
+ */ //Nota: Polimorfismo ---> Permite implementar múltiples formas de un mismo método.
+//Cada objeto responde a un método de diferente forma según su naturaleza en la relación de herencia.
+//También es conocida como sobrecarga.
 public class Perro extends Animal{
     private String raza;
     private String peligree;

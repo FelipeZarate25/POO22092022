@@ -93,10 +93,10 @@ public class ReutilizacionCodigo2209 {
         
         System.out.println("------Ejemplo polimorfismo------");
         
-       Perro dog = new Perro("Bull Dog","5 estrellas",4);
-       dog.emitirSonido();
-       Animal animal= dog;
-       System.out.println(animal.getClass());
+        Perro dog = new Perro("Bull Dog", "5 estrellas", 4);
+        dog.emitirSonido();
+        Animal animal = dog;
+        System.out.println(animal.getClass());
         
     }
     
