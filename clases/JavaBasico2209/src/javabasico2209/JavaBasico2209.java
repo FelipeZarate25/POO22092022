@@ -4,7 +4,9 @@
  */
 package javabasico2209;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 /**
  *
@@ -68,13 +70,15 @@ public class JavaBasico2209 {
         }
         System.out.println(resultado);
         
+        /*Estructura*/
+        //<Cond>? <Sección caso True> : <Sesióc casoFalse>
         /*Operador ternario*/
         int edad4 = 24;
         String res = "";
         res = edad < 18? "Menor de edad 4":"Mayor de edad, tequila";
         System.out.println(res);
             
-        /*Versin mínima*/
+        /*Version mínima*/
         int edad5 = 19;
         System.out.println(edad<18?"Menor de edad 5": "Ya! el tequila");
         
@@ -97,7 +101,7 @@ public class JavaBasico2209 {
         int[] edades; /*primero se declara que será un arreglo*/
         
         edades = new int[5];
-        System.out.println(edades);
+        System.out.println(edades); //en kilos
         
         //En C o C++
         edades[0]= 10;
@@ -122,6 +126,10 @@ public class JavaBasico2209 {
             System.out.println(pesos[i]);
         }
         
+        //Otra forma del Fore
+        for (int peso : pesos) {
+            System.out.println(peso);
+        }
         
         System.out.println("Arreglo de alumnos");
         Alumno[] lista= new Alumno[5]; //5 alumnos
@@ -131,10 +139,18 @@ public class JavaBasico2209 {
         lista[3] = new Alumno("88888", 2, 8.0f);
         lista[4] = new Alumno("66666", 2, 6.0f);
         
+        /*lenght << Longitud del arreglo*/
         for (int i = 0; i < lista.length; i++) {
-            Alumno alumno = lista[i];
-            System.out.println(alumno.evaluarDesempeño()); //FORI + TAB
+            Alumno tmp = lista[i];
+            System.out.println(tmp.evaluarDesempeño()); //FORI + TAB
+        tmp.estudiar(30);
         }
+        /*Otra forma de usar el For*/
+        System.out.println("----------------------------");
+        for (int i = 0; i < lista.length; i++) {
+            System.out.println(lista[i].evaluarDesempeño()); //FORI + TAB
+        }
+        System.out.println("------------------------------------");
         
         /*For each es un For especial, introducido en la version 2 de java, esa version fue 
         la que sufrio cambios muy grandes java
@@ -145,6 +161,58 @@ public class JavaBasico2209 {
             System.out.println(alumno.evaluarDesempeño());
         }
         
+        System.out.println("----------ARRAY LIST-------");
+        ArrayList<Alumno> grupo2209= new ArrayList<>();
+        grupo2209.add(new Alumno("99999", 2, 9.0f));
+        grupo2209.add(new Alumno("88888", 2, 8.0f));
+        grupo2209.add(new Alumno("77777", 2, 7.0f));
+        grupo2209.add(new Alumno("66666", 2, 6.0f));
+        grupo2209.add(new Alumno("55555", 2, 5.0f));
+        
+        for (Alumno alumno : grupo2209) {
+            System.out.println(alumno);
+        }
+        
+        /**/
+        System.out.println("------------Add con indice---------------");
+        grupo2209.add(2, new Alumno("81111", 3, 9.9f));
+        for (Alumno alumno : grupo2209) {
+            System.out.println(alumno);
+        }
+        System.out.println("-------Devuelve un elemento--------");
+        Alumno tmp = grupo2209.get(3); //NC= 77777
+        System.out.println("Alumno de index = 1: "+tmp);
+        
+        System.out.println("-------Remover o eliminar--------");
+        System.out.println("Eliminar el index 3 ");
+        Alumno tmp2 = grupo2209.remove(3);
+        System.out.println("Elemento sacado = "+ tmp2) ;
+        
+        for (Alumno alumno : grupo2209) {
+            System.out.println(alumno);
+        }
+        
+        
+        System.out.println("-----Remplazar el i-esimo elemento-----------");
+        Alumno tmp3 = grupo2209.set(0, new Alumno("444444", 4, 4.0f));
+        System.out.println("El sacado es= "+tmp3);
+        
+        for (Alumno alumno : grupo2209) {
+            System.out.println(alumno);
+        }
+        
+        /*Excepciones*/
+       
+        /*trycatch * TAB*/
+        try {
+            System.out.println("----------Excepciones--------");
+            System.out.println(grupo2209.get(20));
+        } catch (Exception e) {
+            System.out.println("Error.. revisa los indices");
+        }
+
+        System.out.println("Fin del programa ");
+
     }
         
     
