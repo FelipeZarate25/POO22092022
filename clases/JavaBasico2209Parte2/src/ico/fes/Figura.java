@@ -10,4 +10,7 @@ package ico.fes;
  */
 public interface Figura {
     
+    /*Interface*/
+    public abstract float calcularArea();
+    
 }

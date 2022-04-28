@@ -58,7 +58,7 @@ public class JavaBasico2209Parte2 {
             elNombre=null; //Limpieza
         }
         
-        System.out.println (nombres.get(4));
+        //System.out.println (nombres.get(seleccion));
         
         System.out.println("Continua el programa ...");
         
