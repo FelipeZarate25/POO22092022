@@ -19,8 +19,7 @@ public class JavaBasico2209Parte2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        
+       
         /*Excepciones*/
         ArrayList <String> nombres = new ArrayList<String>();
         nombres.add("Alma");
@@ -72,6 +71,8 @@ public class JavaBasico2209Parte2 {
         }
         
         System.out.println("Fin del programa");
+        
+        System.out.println("-------------------------------------------");
     }
     
 }
