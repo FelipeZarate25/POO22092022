@@ -72,7 +72,7 @@ public class JavaBasico2209Parte2 {
         
         System.out.println("Fin del programa");
         
-        System.out.println("-------------------------------------------");
+        System.out.println("---------------------Hasta aquí----------------------");
     }
     
 }
