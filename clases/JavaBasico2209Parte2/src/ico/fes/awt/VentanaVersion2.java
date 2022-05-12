@@ -39,7 +39,7 @@ public class VentanaVersion2 extends Frame{
         cuadroTexto=new TextField(15);
         this.add(cuadroTexto);
         
-        boton1=new Button("Presioname!");
+        boton1=new Button("Presioname");
         this.add(boton1);
         
         etiqueta = new Label("Texto inicial");
@@ -74,9 +74,8 @@ public class VentanaVersion2 extends Frame{
             @Override
             public void keyTyped(KeyEvent e) {
                     System.out.println(e.getKeyChar());
-                    System.out.println(e.getKeyCode());
-            
-                    
+                    //System.out.println(e.getKeyCode
+       
             }
             
             
