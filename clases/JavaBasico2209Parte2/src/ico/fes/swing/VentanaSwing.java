@@ -81,7 +81,7 @@ public class VentanaSwing extends JFrame {
                 }
             }
 
-        });
+        }); /*Nota: Aprender a conectar a Bases de Datos*/
 
     }
 
