@@ -24,16 +24,16 @@ public class InterfazCifradoCesar extends JFrame implements ActionListener{
     //DECLARACIÓN DE LA VARIABLES / PRIVATE
     /*NOTA: Letras usados usados en el cifrado*/
     String letras = "abcdefghijklmnñopqrstuvwxyz";
+    
+    private JTextField cDesplazar;     //Para los campos número de desplazamiento(cuadros)
+    private JTextField cMensaje;       //Para los campos mensaje(cuadros)
+    private JTextField cMensajeD;      //Para los campos mensaje decifrado(cuadros)
+    
+    private JLabel etiDesp;            //Para el nombre desplazar(etiquetas)
+    private JLabel etIngresar;         //Para el nombre ingresar(etiquetas)
+    private JLabel etiMensaje;         //Para el nombre mensaje(etiquetas)
 
-    private JTextField cMensaje;
-    private JTextField cMensajeD;
-    private JTextField cDesplazar;
-
-    private JLabel etiMensaje;
-    private JLabel etIngresar;
-    private JLabel etiDesp;
-
-    private JButton btn;
+    private JButton btn;               //Para el boton(EJMPLO: Cifrar)
 
     /*Método Constructor*/
     public InterfazCifradoCesar() throws HeadlessException {
@@ -42,7 +42,7 @@ public class InterfazCifradoCesar extends JFrame implements ActionListener{
         setTitle("Cifrado César");
 
         /*Dimensión de la ventana*/
-        setSize(490, 465);
+        setSize(490, 466);
                 
         /*Disposición de la ventana*/
         setLayout(null);
@@ -86,14 +86,15 @@ public class InterfazCifradoCesar extends JFrame implements ActionListener{
         btn.setBounds(195, 380, 75, 30);
         btn.setToolTipText("Por favor de hacer clic para cifrar el mensaje");
 
-        this.getContentPane().add(etiDesp);
+        
         this.getContentPane().add(cDesplazar);
         this.getContentPane().add(cMensajeD);
-        this.getContentPane().add(etIngresar);
         this.getContentPane().add(cMensaje);
+        this.getContentPane().add(etiDesp);
+        this.getContentPane().add(etIngresar);
+        this.getContentPane().add(etiMensaje);
         this.getContentPane().add(btn);
         btn.addActionListener(this);
-        this.getContentPane().add(etiMensaje);
 
         this.validate();
         this.setVisible(true);
