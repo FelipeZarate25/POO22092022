@@ -18,7 +18,8 @@ public class TareaCifradoCesar {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        
+        //Declarar el objeto
+        /*Para para llamar a la interfaz*/
          InterfazCifradoCesar interfaz = new InterfazCifradoCesar();
         
     }

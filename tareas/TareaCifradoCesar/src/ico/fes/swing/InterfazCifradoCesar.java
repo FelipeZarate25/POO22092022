@@ -28,7 +28,6 @@ public class InterfazCifradoCesar extends JFrame implements ActionListener{
     private JTextField cMensaje;
     private JTextField cMensajeD;
     private JTextField cDesplazar;
-    
 
     private JLabel etiMensaje;
     private JLabel etIngresar;
@@ -159,7 +158,7 @@ public class InterfazCifradoCesar extends JFrame implements ActionListener{
                 /*Excepciones: Mandará un mensaje en caso de algún error por parte del usuario*/
                 System.out.println(ex.toString());
                 JOptionPane.showMessageDialog(null,
-                        "Introducir los valor correctamente",
+                        "Introducir los valores correctamente",
                         "Error de captura del texto",
                         JOptionPane.ERROR_MESSAGE);
             }
