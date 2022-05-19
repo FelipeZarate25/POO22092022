@@ -10,7 +10,7 @@ import ico.fes.swing.VentanaSwing;
 
 /**
  *
- * @author felipezarate
+ * @author felipe zarate
  */
 public class JavaGraficoMain {
     

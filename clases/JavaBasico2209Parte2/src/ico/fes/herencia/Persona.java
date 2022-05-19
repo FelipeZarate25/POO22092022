@@ -10,8 +10,8 @@ package ico.fes.herencia;
  */
 public class Persona {
         
-        protected String nombre;
-        protected int edad;
+    protected String nombre;
+    protected int edad;
 
     public Persona() {
     }
@@ -39,7 +39,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "nombre =" + nombre + ", edad =" + edad + '}';
+        return nombre + ", " + edad ;
     }
         
         public void comer(){
