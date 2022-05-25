@@ -23,6 +23,8 @@ public class TestSQLite {
             
              stm.execute(" INSERT INTO prueba1 VALUES('Diana','4455677')");
             
+             /*Nota: BD*/
+             
         } catch (SQLException e) {
             e.printStackTrace();
         }
