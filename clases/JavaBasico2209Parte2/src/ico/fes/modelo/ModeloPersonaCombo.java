@@ -73,7 +73,11 @@ public class ModeloPersonaCombo implements ComboBoxModel<Persona> {
            datos.add(new Persona("Jesús", 33));
            datos.add(new Persona("Diana", 2));
      }  
-       
+     
+    public void agregarPersona(Persona p) {
+        //Insert a BD
+        datos.add(p);
+    }
     
 }
 
