@@ -21,6 +21,8 @@ public class TareaCifradoCesar {
         //Declarar el objeto Interfaz Cifrado César
         /*Para para llamar a la interfaz y mostrar la ventana*/
         InterfazCifradoCesar interfaz = new InterfazCifradoCesar();
-
+ 
+        
+        
     }
 }
